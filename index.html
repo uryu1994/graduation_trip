@@ -32,23 +32,26 @@
     }
 
   </style>
+  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="js/mapstyle.js"></script>
 </head>
 
-<body>
+<body onload="initialize();">
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <a class="navber-brand">卒業旅行旅程表</a>
+        <a class="navber-brand" href="#">卒業旅行旅程表</a>
       </div>
       <div class="nav navbar-nav">
         <li><a href="3-3.html">3月3日</a></li>
-        <li><a href="#3-4">3月4日</a></li>
-        <li><a href="#3-5">3月5日</a></li>
-        <li><a href="#3-6">3月6日</a></li>
-        <li><a href="#3-7">3月7日</a></li>
+        <li><a href="3-4.html">3月4日</a></li>
+        <li><a href="3-5.html">3月5日</a></li>
+        <li><a href="3-6.html">3月6日</a></li>
+        <li><a href="3-7.html">3月7日</a></li>
       </div>
     </div>
   </nav>
+
   <header class="jumbotron">
     <div class="container">
       <h1>卒業旅行旅程表</h1>
@@ -56,18 +59,103 @@
       <p><a class="btn btn-primary btn-lg" href="#" role="button">詳しく</a></p>
     </div>
   </header>
+
   <div class="container">
     <div class="page-header">
-      <h1 id="3-4">3月4日 <small>USJ</small></h1>
+      <h1>メンバー <small>狐次郎と愉快な(?)仲間たち</small></h1>
     </div>
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Sex</th>
+        <th>Twitter</th>
+      </tr>
+      <tr>
+        <td>狐次郎</td>
+        <td>男</td>
+        <td><a href="https://twitter.com/vulpini_kitune">@vulpini_kitune</a></td>
+      </tr>
+      <tr>
+        <td>白狐</td>
+        <td>男</td>
+        <td><a href="https://twitter.com/Ikaros_lily">@Ikaros_lily</a></td>
+      </tr>
+      <tr>
+        <td>雨龍</td>
+        <td>男</td>
+        <td><a href="https://twitter.com/prices_over/">@prices_over</a></td>
+      </tr>
+      <tr>
+        <td>いーさん</td>
+        <td>男</td>
+        <td><a href="https://twitter.com/fcijpbgiec_ib">@fcijpbgiec_ib</a></td>
+      </tr>
+      <tr>
+        <td>みるふぃー</td>
+        <td>女</td>
+        <td><a href="https://twitter.com/ryougisiki0401">@ryougisiki0401</a></td>
+      </tr>
+      <tr>
+        <td>otou</td>
+        <td>女</td>
+        <td><a href="https://twitter.com/oto_ura">@oto_ura</a></td>
+      </tr>
+    </table>
     <div class="page-header">
-      <h1 id="3-5">3月5日 <small>京都観光</small></h1>
+      <h1>旅程概要</h1>
     </div>
+    <dl>
+      <dt><a href="3-3.html">3月3日</a></dt>
+      <dd>札幌駅ー新千歳空港ー関西国際空港ー京都 <small>宿泊先:ホテルステーション京都</small></dd>
+    </dl>
+    <dl>
+      <dt><a href="3-4.html">3月4日</a></dt>
+      <dd>ホテルーUSJーホテル <small>宿泊先:ホテルステーション京都</small></dd>
+    </dl>
+    <dl>
+      <dt><a href="3-5.html">3月5日</a></dt>
+      <dd>ホテルー京都市内観光ーホテル <small>宿泊先:ホテルステーション京都</small></dd>
+    </dl>
+    <dl>
+      <dt><a href="3-6.html">3月6日</a></dt>
+      <dd>ホテルー大阪市内観光ーホテル <small>宿泊先:ホテル不死王閣</small></dd>
+    </dl>
+    <dl>
+      <dt><a href="3-7.html">3月7日</a></dt>
+      <dd>ホテルー関西国際空港ー新千歳空港 <small>到着後解散</small></dd>
+    </dl>
+
     <div class="page-header">
-      <h1 id="3-6">3月6日 <small>大阪観光</small></h1>
+      <h1>宿泊先</h1>
     </div>
-    <div class="page-header">
-      <h1 id="3-7">3月7日 <small>帰着</small></h1>
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">ホテルステーション京都 <small>3月3日ー3月4日</small></h3>
+      </div>
+      <div class="panel-body">
+        <dl>
+          <dt>アクセス</dt>
+          <dd>京都駅下車，烏丸中央口より東洞院通りを北へ徒歩4分</dd>
+        </dl>
+        <div id="map_canvas" style="width:100%;height:500px;"></div>
+      </div>
+      <div class="panel-footer">
+        <p class="text-muted">URL:<a href="http://www.hotel-st-kyoto.com/main_top.html">http://www.hotel-st-kyoto.com/main_top.html</a></p>
+      </div>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">ホテル不死王閣</h3>
+      </div>
+      <div class="panel-body">
+        <dl>
+          <dt>アクセス</dt>
+          <dd>阪急宝塚線 池田駅 → 阪急バス西乗り場、4番乗り口、系統番号26・131・135・136・139番のバスにご乗車下さい。(伏尾駅下車池田駅より約15分）</dd>
+        </dl>
+      </div>
+      <div class="panel-footer">
+        <p class="text-muted">URL:<a href="http://www.fushioukaku.co.jp/">http://www.fushioukaku.co.jp/</a></p>
+      </div>
     </div>
   </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
