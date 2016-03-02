@@ -32,11 +32,9 @@
     }
 
   </style>
-  <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script src="js/mapstyle.js"></script>
 </head>
 
-<body onload="initialize();">
+<body>
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -61,100 +59,114 @@
   </header>
 
   <div class="container">
-    <div class="page-header">
-      <h1>メンバー <small>狐次郎と愉快な(?)仲間たち</small></h1>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="page-header">
+          <h1>メンバー <small>狐次郎と愉快な(?)仲間たち</small></h1>
+        </div>
+        <table class="table">
+          <tr>
+            <th>Name</th>
+            <th>Sex</th>
+            <th>Twitter</th>
+          </tr>
+          <tr>
+            <td>狐次郎</td>
+            <td>男</td>
+            <td><a href="https://twitter.com/vulpini_kitune">@vulpini_kitune</a></td>
+          </tr>
+          <tr>
+            <td>白狐</td>
+            <td>男</td>
+            <td><a href="https://twitter.com/Ikaros_lily">@Ikaros_lily</a></td>
+          </tr>
+          <tr>
+            <td>雨龍</td>
+            <td>男</td>
+            <td><a href="https://twitter.com/prices_over/">@prices_over</a></td>
+          </tr>
+          <tr>
+            <td>いーさん</td>
+            <td>男</td>
+            <td><a href="https://twitter.com/fcijpbgiec_ib">@fcijpbgiec_ib</a></td>
+          </tr>
+          <tr>
+            <td>みるふぃー</td>
+            <td>女</td>
+            <td><a href="https://twitter.com/ryougisiki0401">@ryougisiki0401</a></td>
+          </tr>
+          <tr>
+            <td>otou</td>
+            <td>女</td>
+            <td><a href="https://twitter.com/oto_ura">@oto_ura</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="page-header">
+          <h1>旅程概要</h1>
+        </div>
+        <dl>
+          <dt><a href="3-3.html">3月3日</a></dt>
+          <dd>札幌駅発-新千歳空港-関西国際空港-京都-ホテル着  <small>宿泊先:<a href="#hotel-kyoto">ホテルステーション京都</a></small></dd>
+        </dl>
+        <dl>
+          <dt><a href="3-4.html">3月4日</a></dt>
+          <dd>ホテル発-USJ-ホテル着  <small>宿泊先:<a href="#hotel-kyoto">ホテルステーション京都</a></small></dd>
+        </dl>
+        <dl>
+          <dt><a href="3-5.html">3月5日</a></dt>
+          <dd>ホテル発-京都市内観光-ホテル着  <small>宿泊先:<a href="#hotel-kyoto">ホテルステーション京都 </a></small></dd>
+        </dl>
+        <dl>
+          <dt><a href="3-6.html">3月6日</a></dt>
+          <dd>ホテル発-大阪市内観光-ホテル着  <small>宿泊先:<a href="#hotel-fushi">ホテル不死王閣</a></small></dd>
+        </dl>
+        <dl>
+          <dt><a href="3-7.html">3月7日</a></dt>
+          <dd>ホテル発-関西国際空港-新千歳空港  <small>到着後解散</small></dd>
+        </dl>
+      </div>
     </div>
-    <table class="table">
-      <tr>
-        <th>Name</th>
-        <th>Sex</th>
-        <th>Twitter</th>
-      </tr>
-      <tr>
-        <td>狐次郎</td>
-        <td>男</td>
-        <td><a href="https://twitter.com/vulpini_kitune">@vulpini_kitune</a></td>
-      </tr>
-      <tr>
-        <td>白狐</td>
-        <td>男</td>
-        <td><a href="https://twitter.com/Ikaros_lily">@Ikaros_lily</a></td>
-      </tr>
-      <tr>
-        <td>雨龍</td>
-        <td>男</td>
-        <td><a href="https://twitter.com/prices_over/">@prices_over</a></td>
-      </tr>
-      <tr>
-        <td>いーさん</td>
-        <td>男</td>
-        <td><a href="https://twitter.com/fcijpbgiec_ib">@fcijpbgiec_ib</a></td>
-      </tr>
-      <tr>
-        <td>みるふぃー</td>
-        <td>女</td>
-        <td><a href="https://twitter.com/ryougisiki0401">@ryougisiki0401</a></td>
-      </tr>
-      <tr>
-        <td>otou</td>
-        <td>女</td>
-        <td><a href="https://twitter.com/oto_ura">@oto_ura</a></td>
-      </tr>
-    </table>
-    <div class="page-header">
-      <h1>旅程概要</h1>
-    </div>
-    <dl>
-      <dt><a href="3-3.html">3月3日</a></dt>
-      <dd>札幌駅発-新千歳空港-関西国際空港-京都-ホテル着  <small>宿泊先:<a href="#hotel-kyoto">ホテルステーション京都</a></small></dd>
-    </dl>
-    <dl>
-      <dt><a href="3-4.html">3月4日</a></dt>
-      <dd>ホテル発-USJ-ホテル着  <small>宿泊先:<a href="#hotel-kyoto">ホテルステーション京都</a></small></dd>
-    </dl>
-    <dl>
-      <dt><a href="3-5.html">3月5日</a></dt>
-      <dd>ホテル発-京都市内観光-ホテル着  <small>宿泊先:<a href="#hotel-kyoto">ホテルステーション京都 </a></small></dd>
-    </dl>
-    <dl>
-      <dt><a href="3-6.html">3月6日</a></dt>
-      <dd>ホテル発-大阪市内観光-ホテル着  <small>宿泊先:<a href="#hotel-fushi">ホテル不死王閣</a></small></dd>
-    </dl>
-    <dl>
-      <dt><a href="3-7.html">3月7日</a></dt>
-      <dd>ホテル発-関西国際空港-新千歳空港  <small>到着後解散</small></dd>
-    </dl>
-
     <div class="page-header">
       <h1>宿泊先</h1>
     </div>
-    <div id="hotel-kyoto" class="panel panel-info">
-      <div class="panel-heading">
-        <h3 class="panel-title">ホテルステーション京都  <small>3月3日-3月4日</small></h3>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div id="hotel-kyoto" class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">ホテルステーション京都  <small>3月3日-3月4日</small></h3>
+          </div>
+          <div class="panel-body">
+            <dl>
+              <dt>アクセス</dt>
+              <dd>京都駅下車，烏丸中央口より東洞院通りを北へ徒歩4分</dd>
+            </dl>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.6685150195894!2d135.7590289148769!3d34.98996697517925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108affbe4aacd%3A0x149d9fc655f9b602!2z44Ob44OG44Or44K544OG44O844K344On44Oz5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1456897990420" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="panel-footer">
+            <p class="text-muted">URL:<a href="http://www.hotel-st-kyoto.com/main_top.html">http://www.hotel-st-kyoto.com/main_top.html</a></p>
+          </div>
+        </div>
       </div>
-      <div class="panel-body">
-        <dl>
-          <dt>アクセス</dt>
-          <dd>京都駅下車，烏丸中央口より東洞院通りを北へ徒歩4分</dd>
-        </dl>
-        <div id="map_canvas" style="width:100%;height:500px;"></div>
-      </div>
-      <div class="panel-footer">
-        <p class="text-muted">URL:<a href="http://www.hotel-st-kyoto.com/main_top.html">http://www.hotel-st-kyoto.com/main_top.html</a></p>
-      </div>
-    </div>
-    <div id="hotel-fushi" class="panel panel-success">
-      <div class="panel-heading">
-        <h3 class="panel-title">ホテル不死王閣  <small>3月5日-3月6日</small></h3>
-      </div>
-      <div class="panel-body">
-        <dl>
-          <dt>アクセス</dt>
-          <dd>阪急宝塚線 池田駅 → 阪急バス西乗り場、4番乗り口、系統番号26・131・135・136・139番のバスにご乗車下さい。(伏尾駅下車池田駅より約15分）</dd>
-        </dl>
-      </div>
-      <div class="panel-footer">
-        <p class="text-muted">URL:<a href="http://www.fushioukaku.co.jp/">http://www.fushioukaku.co.jp/</a></p>
+      <div class="col-md-6 col-sm-12">
+        <div id="hotel-fushi" class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">ホテル不死王閣  <small>3月5日-3月6日</small></h3>
+          </div>
+          <div class="panel-body">
+            <dl>
+              <dt>アクセス</dt>
+              <dd>阪急宝塚線 池田駅 → 阪急バス西乗り場、4番乗り口、系統番号26・131・135・136・139番のバスにご乗車下さい。(伏尾駅下車池田駅より約15分）</dd>
+            </dl>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.9611146689585!2d135.4397853148733!3d34.857204382328554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f765dbf48ffd%3A0x31f1a4e072d44213!2z5LiN5q27546L6Zaj!5e0!3m2!1sja!2sjp!4v1456898163878" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="panel-footer">
+            <p class="text-muted">URL:<a href="http://www.fushioukaku.co.jp/">http://www.fushioukaku.co.jp/</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
