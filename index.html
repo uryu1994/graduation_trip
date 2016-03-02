@@ -33,9 +33,10 @@
     }
 
   </style>
+  <script src="js/information.js"></script>
 </head>
 
-<body>
+<body onload="nowSchedule()">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -72,6 +73,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-sm-12col-xs-12">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">本日の予定</h3>
+          </div>
+          <div class="panel-body">
+            <p class="lead" id="now_D"></p>
+            <p id="now_S"></p>
+          </div>
+        </div>
         <div class="page-header" id="trip_abst">
           <h1>旅行概要 <small></small></h1>
         </div>
